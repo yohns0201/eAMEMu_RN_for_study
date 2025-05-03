@@ -1,10 +1,9 @@
-package dev.nulldori.eamemu;
+package dev.yohns.aicemu;
 
 import android.nfc.cardemulation.HostNfcFService;
 import android.os.Bundle;
-import android.widget.Toast;
 
-public class eAMEMuService extends HostNfcFService {
+public class AICEmuService extends HostNfcFService {
     @Override
     public byte[] processNfcFPacket(byte[] commandPacket, Bundle extras){
         return null;

@@ -1,26 +1,13 @@
-package dev.nulldori.eamemu;
-
-import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.app.AppCompatActivity;
+package dev.yohns.aicemu;
 
 import android.content.ComponentName;
-import android.content.Context;
-import android.content.DialogInterface;
-import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.nfc.NfcAdapter;
 import android.nfc.cardemulation.NfcFCardEmulation;
-import android.nfc.tech.NfcA;
-import android.os.Bundle;
 import android.util.Log;
-import android.view.View;
-import android.widget.EditText;
-import android.widget.Toast;
 
-import com.facebook.react.bridge.NativeModule;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.LifecycleEventListener;
-import com.facebook.react.bridge.ReactContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.bridge.Promise;
@@ -52,7 +39,7 @@ public class HcefModule extends ReactContextBaseJavaModule implements LifecycleE
         nfcAdapter = NfcAdapter.getDefaultAdapter(getReactApplicationContext());
         if(nfcAdapter != null && nfcAdapter.isEnabled()){
             nfcFCardEmulation = NfcFCardEmulation.getInstance(nfcAdapter);
-            componentName = new ComponentName("dev.nulldori.eamemu","dev.nulldori.eamemu.eAMEMuService");
+            componentName = new ComponentName("dev.yohns.aicemu","dev.yohns.aicemu.AICEmuService");
             if(nfcFCardEmulation != null){
                 nfcFCardEmulation.registerSystemCodeForService(componentName, "4000");
                 isHceFEnabled = true;

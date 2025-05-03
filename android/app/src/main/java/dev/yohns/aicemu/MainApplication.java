@@ -1,4 +1,4 @@
-package dev.nulldori.eamemu;
+package dev.yohns.aicemu;
 
 import android.app.Application;
 import com.facebook.react.PackageList;

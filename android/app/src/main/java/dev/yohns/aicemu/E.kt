@@ -1,4 +1,4 @@
-package dev.nulldori.eamemu
+package dev.yohns.aicemu
 
 object E {
     fun a(arg4: CharSequence): ByteArray {

@@ -65,3 +65,4 @@ yarn-error.log
 
 # android keystore credentials
 android/keystore.properties
+/android/app/src/main/java/dev/yohns/aicemu.zip

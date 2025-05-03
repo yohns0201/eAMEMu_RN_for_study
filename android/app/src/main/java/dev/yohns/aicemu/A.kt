@@ -1,10 +1,11 @@
-package dev.nulldori.eamemu
+package dev.yohns.aicemu
 
 import java.io.UnsupportedEncodingException
 import kotlin.experimental.xor
 
 class A {
     private var a: B? = null
+    
 
     init {
         try {

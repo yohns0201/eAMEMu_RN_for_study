@@ -1,4 +1,4 @@
-package dev.nulldori.eamemu
+package dev.yohns.aicemu
 
 class B(arg4: ByteArray) {
     private val k: IntArray
